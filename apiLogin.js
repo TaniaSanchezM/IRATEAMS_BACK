@@ -42,7 +42,7 @@ app.post('/login', (req, res) => {
                 msg:"Error al conectar con la base de datos", 
                 resultado:err
             };
-            response.status(500).send(response);
+            res.status(500).send(response);
             return;
         }
         if (results.length > 0) { 
