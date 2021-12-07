@@ -197,7 +197,7 @@ app.get("/calendario", function(request, response)
         }
         else{
             if (result.length == 0) {
-                respuesta = {error:false,msg:"Error al obtener p´roximos eventos", resultado:result}
+                respuesta = {error:false,msg:"Error al obtener próximos eventos", resultado:result}
                 response.status(404).send(respuesta);
             } else {
                 respuesta = {error:false,msg:"Próximos eventos", resultado:result}

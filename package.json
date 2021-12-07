@@ -2,9 +2,14 @@
   "name": "back",
   "version": "1.0.0",
   "description": "",
-  "main": "apiIrateams.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository":{
+    "type": "git",
+    "url": "git+https://github.com/TaniaSanchezM/IRATEAMS_BACK.git"
   },
   "author": "",
   "license": "ISC",

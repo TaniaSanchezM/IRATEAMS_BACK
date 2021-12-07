@@ -27,6 +27,6 @@ app.use(express.json());
 
 // ENDPOINTS AQUÍ!!
 
-app.listen(3306,"localhost",()=>{
+app.listen(3000,"localhost",()=>{
     console.log("Conectado desde el servidor 3306")
  })
