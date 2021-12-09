@@ -57,7 +57,7 @@ app.post("/chat",
             } else {
                 // respuesta = {error:false, msg:"Chat creado correctamente", resultado:result}
                 // response.status(200).send(respuesta);
-                if (!result) {
+                if (result == "") {
                     sql = `INSERT INTO IRATEAMS.chat (id_user1, id_user2)
                 VALUES ('${request.body.id_user1}', '${request.body.id_user2}')`;
 
@@ -71,6 +71,9 @@ app.post("/chat",
                             response.status(200).send(respuesta);
                         }
                     })
+                } else if (result != "") {
+                    respuesta = {error:false, msg:"El chat ya está creado", resultado:result}
+                    response.status(200).send(respuesta);
                 }
             }
         })
